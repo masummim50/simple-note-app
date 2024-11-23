@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-scrollbar {
+    overflow-y: scroll; /* Enable vertical scrolling */
+    /* scrollbar-width: none; Completely hides the scrollbar in Firefox */
+  }
+  
+  /* For Chrome, Edge, Safari */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 4px; /* Ultra-thin vertical scrollbar */
+    height: 1px; /* Ultra-thin horizontal scrollbar */
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-button {
+    display: none; /* Remove the up/down arrows */
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent; /* Track is completely invisible */
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,0.3);
+    opacity: 0.6; /* Thumb color */
+    border-radius: 10px; /* Rounded edges for aesthetics */
+    min-height: 20px; /* Prevent thumb from disappearing */
+  }
+  
